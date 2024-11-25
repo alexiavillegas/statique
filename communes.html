@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communes</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Pour utiliser jQuery -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Formulaire d'aide à la décision</h1>
+    <input type="text" id="searchBar" placeholder="Rechercher une commune...">
+  </header>
+  <main>
+    <section>
+      <h2>Sélectionnez la commune du patient</h2>
+      <ul id="communeList">
+        <!-- Liste des communes générée dynamiquement -->
+        <li><a href="contact_dac.html?commune=Artigues">Artigues</a></li>
+        <li><a href="contact_dac.html?commune=Barjols">Barjols</a></li>
+        <li><a href="contact_dac.html?commune=Besse">Besse</a></li>
+        <li><a href="contact_clic.html?commune=Bras">Bras</a></li>
+        <li><a href="contact_clic.html?commune=Brignoles">Brignoles</a></li>
+        <li><a href="contact_dac.html?commune=Brue-Auriac">Brue-Auriac</a></li>
+        <li><a href="contact_dac.html?commune=Cabasse">Cabasse</a></li>
+        <li><a href="contact_clic.html?commune=Camps-la-source">Camps-la-source</a></li>
+        <li><a href="contact_clic.html?commune=Carces">Carces</a></li>
+        <li><a href="contact_clic.html?commune=Chateauvert">Chateauvert</a></li>
+        <li><a href="contact_clic.html?commune=Correns">Correns</a></li>
+        <li><a href="contact_clic.html?commune=Cotignac">Cotignac</a></li>
+        <li><a href="contact_clic.html?commune=Entrecasteaux">Entrecasteaux</a></li>
+        <li><a href="contact_dac.html?commune=Esparron">Esparron</a></li>
+        <li><a href="contact_dac.html?commune=Flassans">Flassans</a></li>
+        <li><a href="contact_clic.html?commune=Forcalqueiret">Forcalqueiret</a></li>
+        <li><a href="contact_dac.html?commune=Fox-Amphoux">Fox-Amphoux</a></li>
+        <li><a href="contact_clic.html?commune=Gareoult">Gareoult</a></li>
+        <li><a href="contact_dac.html?commune=Ginasservis">Ginasservis</a></li>
+        <li><a href="contact_clic.html?commune=La Celle">La Celle</a></li>
+        <li><a href="contact_clic.html?commune=La Roquebrussanne">La Roquebrussanne</a></li>
+        <li><a href="contact_dac.html?commune=La-Verdiere">La Verdiere</a></li>
+        <li><a href="contact_clic.html?commune=Le Val">Le Val</a></li>
+        <li><a href="contact_clic.html?commune=Mazaugues">Mazaugues</a></li>
+        <li><a href="contact_clic.html?commune=Meounes-les-Montrieux">Meounes-les-Montrieux</a></li>
+        <li><a href="contact_clic.html?commune=Montfort-sur-Argens">Montfort-sur-Argens</a></li>
+        <li><a href="contact_dac.html?commune=Montmeyan">Montmeyan</a></li>
+        <li><a href="contact_clic.html?commune=Nans-les-Pins">Nans-les-Pins</a></li>
+        <li><a href="contact_clic.html?commune=Neoules">Neoules</a></li>
+        <li><a href="contact_clic.html?commune=Ollieres">Ollieres</a></li>
+        <li><a href="contact_clic.html?commune=Plan-d'Aups-Sainte-Baume">Plan-d'Aups-Sainte-Baume</a></li>
+        <li><a href="contact_dac.html?commune=Ponteves">Ponteves</a></li>
+        <li><a href="contact_clic.html?commune=Pourcieux">Pourcieux</a></li>
+        <li><a href="contact_clic.html?commune=Pourrieres">Pourrieres</a></li>
+        <li><a href="contact_dac.html?commune=Rians">Rians</a></li>
+        <li><a href="contact_clic.html?commune=Rocbaron">Rocbaron</a></li>
+        <li><a href="contact_clic.html?commune=Rougiers">Rougiers</a></li>
+        <li><a href="contact_clic.html?commune=Sainte-Anastasie-sur-Issole">Sainte-Anastasie-sur-Issole</a></li>
+        <li><a href="contact_dac.html?commune=Saint-Julien">Saint-Julien</a></li>
+        <li><a href="contact_dac.html?commune=Saint-Martin">Saint-Martin</a></li>
+        <li><a href="contact_clic.html?commune=Saint-Maximin-la-Sainte-Baume">Saint-Maximin-la-Sainte-Baume</a></li>
+        <li><a href="contact_dac.html?commune=Saint-Zacharie">Saint-Zacharie</a></li>
+        <li><a href="contact_dac.html?commune=Seillons">Seillons</a></li>
+        <li><a href="contact_dac.html?commune=Sillans">Sillans</a></li>
+        <li><a href="contact_dac.html?commune=Tavernes">Tavernes</a></li>
+        <li><a href="contact_clic.html?commune=Tourves">Tourves</a></li>
+        <li><a href="contact_dac.html?commune=Varages">Varages</a></li>
+        <li><a href="contact_clic.html?commune=Vinon-sur-Verdon">Vinon-sur-Verdon</a></li>
+        <li><a href="contact_clic.html?commune=Vins-sur-Caramy">Vins-sur-Caramy</a></li>
+        
+        <!-- Ajoute les autres communes ici -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 - DAC VAR OUEST</p>
+  </footer>
+
+  <script>
+    // Fonction de filtrage dynamique
+    $(document).ready(function(){
+      $("#searchBar").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#communeList li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

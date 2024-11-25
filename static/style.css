@@ -1,0 +1,182 @@
+body, html {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    background-color: #c9e1f7;
+    height: 100%; /* Permet de remplir toute la hauteur de la fenêtre */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  main {
+    margin: 2rem auto;
+    width: 80%;
+    flex: 1; /* Prend tout l'espace disponible entre le header et le footer */
+  }
+
+  /* Style pour la navbar */
+.navbar {
+    background-color: #004466; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Style pour le texte explicatif */
+.description {
+    font-size: 22px;
+    color: #727272;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; /* Limiter la largeur pour une meilleure lisibilité */
+    line-height: 1.6; /* Espacement entre les lignes */
+    font-family: 'Oswald', sans-serif;
+}
+
+.question {
+    text-align: center;
+    color: #000000;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Style pour le footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #555555;
+    font-family: 'Oswald', sans-serif;
+}
+
+  
+  .btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0078D7;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les boutons */
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .btn:hover {
+    background-color: #005BB5;
+  }
+
+  #searchBar {
+    width: 40%; /* Prend toute la largeur disponible */
+    padding: 12px; /* Ajouter de l'espace à l'intérieur de la barre */
+    font-size: 18px; /* Taille du texte */
+    margin: 20px 0; /* Marge pour espacer la barre de recherche des autres éléments */
+    border: 2px solid #ccc; /* Bordure grise pour le champ */
+    border-radius: 8px; /* Bordures arrondies */
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  /* Style des éléments de la liste des communes */
+ul li a {
+    font-size: 20px; /* Taille du texte des noms des communes */
+    font-family: 'Oswald', sans-serif;
+    color: #333; /* Couleur du texte */
+    text-decoration: none; /* Enlever le soulignement par défaut des liens */
+    display: block; /* Pour que les liens prennent toute la largeur de leur conteneur (pour plus de clarté visuelle) */
+    padding: 8px 0; /* Un peu d'espace autour du texte */
+    margin: 5px 0; /* Marge entre les éléments */
+  }
+  
+  /*Changer la couleur au survol */
+  ul li a:hover {
+    color: #0056b3; /* Changer la couleur du texte lors du survol */
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+  }
+  
+  body {
+    background-color: #c9e1f7; /* Remplacez cette couleur par celle que vous souhaitez */
+    font-family: 'Oswald', sans-serif; /* Choisir une police si nécessaire */
+    margin: 0;
+    padding: 0;
+  }
+
+
+  h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px
+  }
+
+/* Style pour le contact-box */
+.contact-box {
+    background-color: #ffffff; /* Fond bleu clair */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 30px; /* Espacement à l'intérieur */
+    min-height: 250px; /* Hauteur minimale pour rendre le rectangle plus long */
+    max-width: 500px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Style pour la boîte contenant "Voici les informations pour le CLIC" */
+  .header-box {
+    background-color: #6290c7; /* Fond bleu foncé */
+    color: rgb(255, 255, 255); /* Couleur du texte en blanc */
+    padding: 10px; /* Espacement à l'intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espacement en bas de la boîte */
+    font-size: 18px; /* Taille de la police */
+    font-weight: bold; /* Gras pour mettre en valeur le texte */
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Conteneur du logo */
+  .logo-container {
+    margin: 20px 0; /* Espacement autour du logo */
+  }
+  
+  /* Style pour le logo CLIC */
+  .clic-logo {
+    width: 150px; /* Ajuste la taille du logo (vous pouvez changer cette taille) */
+    height: auto; /* Conserve les proportions du logo */
+    display: block; /* Le logo est un bloc */
+    margin: 0 auto; /* Centre le logo horizontalement */
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Nouveau rectangle pour les coordonnées */
+  .contact-details {
+    background-color: #6290c7; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 15px; /* Espacement à l'intérieur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-top: 20px; /* Espacement au-dessus */
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Style pour les coordonnées de contact */
+  .contact-details p {
+    font-size: 22px; /* Taille de la police des coordonnées */
+    color: #ffffff; /* Couleur du texte */
+    margin: 15px 0; /* Espacement entre les coordonnées */
+    line-height: 1.6; /* Espacement entre les lignes */
+    font-weight: bold; /* Rendre le texte plus visible */
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  
