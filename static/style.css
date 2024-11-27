@@ -20,6 +20,7 @@ body, html {
     margin: 2rem auto;
     width: 80%;
     flex: 1; /* Prend tout l'espace disponible entre le header et le footer */
+    text-align: center; /* Centre le texte */
   }
 
   /* Style pour la navbar */
@@ -31,6 +32,40 @@ body, html {
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
 }
+
+main p {
+    font-size: 18px;
+    color: #1e90ff; /* Rouge pour le texte */
+    margin: 10px 0; /* Espace autour du texte */
+    text-align: center; /* Centre le texte */
+}
+
+main img {
+    display: block;
+    margin: 20px auto; /* Centre l'image horizontalement */
+    max-width: 80%; /* Adapte la largeur de l'image à l'écran */
+    height: auto; /* Maintient les proportions */
+} 
+
+main a {
+    display: inline-block; /* Rend le lien plus visible et facile à cliquer */
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    color: #1e90ff; /* Couleur bleue pour le lien */
+    text-decoration: none; /* Supprime le soulignement */
+    border: 1px solid #1e90ff; /* Ajoute une bordure autour du lien */
+    padding: 10px 15px;
+    border-radius: 5px; /* Arrondit les bords */
+    transition: background-color 0.3s, color 0.3s; /* Animation pour l'effet de survol */
+    
+}
+
+a:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
 
 /* Style pour le texte explicatif */
 .description {
