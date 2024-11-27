@@ -126,6 +126,13 @@ footer {
   }
 
   /* Style des éléments de la liste des communes */
+ul {
+    list-style-type: none; 
+    text-decoration: none; /* Enlever le soulignement des liens */
+}
+
+
+
 ul li a {
     font-size: 20px; /* Taille du texte des noms des communes */
     font-family: 'Oswald', sans-serif;
@@ -140,6 +147,7 @@ ul li a {
   ul li a:hover {
     color: #0056b3; /* Changer la couleur du texte lors du survol */
     text-decoration: underline; /* Ajouter un soulignement au survol */
+
   }
   
   body {
